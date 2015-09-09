@@ -15,13 +15,13 @@ class GitAr
         // Define the cli options.
         $cli = new Cli();
 
-        $cli->description('A simple wrapper for deploy systems.')
+        $cli->description('A simple way to archive and include git repositories in another git repository.')
             // Define the first command: dev.
             ->command('archive')
-            ->description('Archive all .git directories.')
+            ->description('Archive all .git in sub-directories.')
             // Define the first command: int.
             ->command('restore')
-            ->description('Restore all .git directories.')
+            ->description('Archive all .git in sub-directories.')
             ->command('*')
             ->opt('directory:d', 'Root directory for processing.', false, 'string');
 
