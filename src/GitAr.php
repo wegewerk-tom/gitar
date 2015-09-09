@@ -81,7 +81,7 @@ class GitAr
           unset($scanner);
 
           $this->batchRename($renames);
-          $this->setStatus("restored");
+          $this->setStatus("archived");
         }
         else {
           print "Cannot archive, because GitAr status is ". $this->getStatus() .".". PHP_EOL;
