@@ -1,7 +1,7 @@
 {
-    "name": "wegewerk/devops/GitTar",
+    "name": "wegewerk/devops/GitAr",
     "type": "project",
-    "description": "Archive and unarchive .git directories in Sub-modules.",
+    "description": "Archive and restore .git directories in sub-directories.",
     "license": "http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0",
     "minimum-stability": "dev",
     "authors": [
@@ -17,6 +17,7 @@
     "require": {
         "php": ">=5.4",
         "kzykhys/git": "dev-master",
+        "theseer/directoryscanner": "1.3.*",
         "symfony/options-resolver": "2.3.*",
         "vanilla/garden-cli": "1.2.*",
         "seld/cli-prompt":"1.0.*"
