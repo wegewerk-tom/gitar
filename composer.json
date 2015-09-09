@@ -27,6 +27,9 @@
             "wegewerk\\devops\\": "src/"
         }
     },
+    "bin": [
+      "bin/gitar"
+    ],
     "config": {
         "optimize-autoloader": true,
         "vendor-dir": "vendor",
