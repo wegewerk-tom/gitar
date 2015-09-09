@@ -1,0 +1,34 @@
+{
+    "name": "wegewerk/devops/GitTar",
+    "type": "project",
+    "description": "Archive and unarchive .git directories in Sub-modules.",
+    "license": "http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Thomas Stec ",
+            "email": "initialinitialc@wegewerk.com"
+        },
+        {
+            "name": "wegewerk GmbH",
+            "homepage": "http://www.wegewerk.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "kzykhys/git": "dev-master",
+        "symfony/options-resolver": "2.3.*",
+        "vanilla/garden-cli": "1.2.*",
+        "seld/cli-prompt":"1.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "wegewerk\\devops\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "vendor-dir": "vendor",
+        "bin-dir": "bin"
+    }
+}
