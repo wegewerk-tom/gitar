@@ -7,7 +7,8 @@
     "authors": [
         {
             "name": "Thomas Stec ",
-            "email": "initialinitialc@wegewerk.com"
+            "email": "initialinitialc@wegewerk.com",
+            "email": "first.last@gmail.com"
         },
         {
             "name": "wegewerk GmbH",
@@ -27,9 +28,7 @@
             "wegewerk\\devops\\": "src/"
         }
     },
-    "bin": [
-      "bin/gitar"
-    ],
+    "bin": ["bin/gitar"],
     "config": {
         "optimize-autoloader": true,
         "vendor-dir": "vendor",
