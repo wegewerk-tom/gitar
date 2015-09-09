@@ -1,4 +1,14 @@
 #!/usr/bin/env php
 <?php
-include dirname(__FILE__) .'/vendor/autoload.php';
-$run = new wegewerk\devops\GitAr($argv);
+$autoloaders = array(
+  dirname(__FILE__) .'/vendor/autoload.php',     //  <--Package autoloader.
+  dirname(__FILE__) .'/../../../../autoload.php', // <---Vendor autoloader.
+);
+foreach($autoloaders as $filename) {
+  if (file_exists($filename)) {
+    include $filename;
+    new wegewerk\devops\GitAr($argv);
+    exit(0);
+  }
+}
+print "Failed to include autoload.php." . PHP_EOL;
