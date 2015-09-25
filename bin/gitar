@@ -1,8 +1,8 @@
 #!/usr/bin/env php
 <?php
 $autoloaders = array(
-  dirname(__FILE__) .'/vendor/autoload.php',     //  <--Package autoloader.
-  dirname(__FILE__) .'/../../../../autoload.php', // <---Vendor autoloader.
+  dirname(__FILE__) .'/../vendor/autoload.php',     //  <--Package autoloader.
+  dirname(__FILE__) .'/../../../autoload.php', // <---Vendor autoloader.
 );
 foreach($autoloaders as $filename) {
   if (file_exists($filename)) {
