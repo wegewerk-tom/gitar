@@ -12,3 +12,4 @@ foreach($autoloaders as $filename) {
   }
 }
 print "Failed to include autoload.php." . PHP_EOL;
+exit(500);
