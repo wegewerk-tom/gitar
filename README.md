@@ -1,4 +1,4 @@
-### A simple way to archive git repositories for inclusion within another git repository.
+### A simple, perhaps ill-advised, attempt to archive git repositories for inclusion within other git repositories.
 
 ```
 usage: php gitar.php <command> [<options>]
